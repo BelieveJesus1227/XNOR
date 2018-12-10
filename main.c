@@ -138,7 +138,7 @@ int main(int argc, char* argv[]){
     set_paths();
  
 // 读取手写字体数据集
-    read_mnist_images_labels(TRAIN_IMAGES, TRAIN_LABELS, &input_images, &labels);
+    read_mnist_images_labels(TRAIN_IMAGES, TRAIN_LABELS, &input_images, &labels);	//from ~ src/mnist_wrapper.c
 
     printf("number_of_images=%d\n", NUM_IMAGES);
     printf("number_of_labels=%d\n", NUM_IMAGES);
