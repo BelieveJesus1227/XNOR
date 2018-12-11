@@ -152,8 +152,8 @@ int main(int argc, char* argv[]){
 
     build_args(&fil_w, FIL_COLS, FIL_ROWS, FIL_DEPTH, NUM_FILS);
     build_args(&fil_b, 1, 1, 1, NUM_FILS);
-    initialize_filters(&fil_w, &fil_b);
-    print_filters(&fil_w, &fil_b);
+    initialize_filters(&fil_w, &fil_b);					//src/conv_layer.c
+    print_filters(&fil_w, &fil_b);					//src/conv_layer.c	offset //src/tensor.c
 
     N_ROWS_CONV = IMAGE_ROWS - FIL_ROWS + 1;
     N_COLS_CONV = IMAGE_COLS - FIL_COLS + 1;
