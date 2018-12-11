@@ -517,7 +517,7 @@ void xnor_net()
         correct_preds = 0;
         for (int i = 0; i < N_BATCHES; ++i)
         {
-            cycles_count_start();
+            cycles_count_start();						// lib/perf/perf.cpp
             binarize_filters(&fil_w, fil_bin_w, alphas);
             binarize_cycles += cycles_count_stop();
 
