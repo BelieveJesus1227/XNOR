@@ -561,7 +561,7 @@ void xnor_net()
             update_softmax_biases_cycles += cycles_count_stop();
 
             cycles_count_start();
-            update_conv_weights(&fil_w, &del_conv, &conv_t, &input_images, i*BATCH_SIZE, shuffle_index);
+            update_conv_weights(&fil_w, &del_conv, &conv_t, &input_images, i*BATCH_SIZE, shuffle_index);	///src/back_prop.c
             update_conv_weights_cycles += cycles_count_stop();
 
             cycles_count_start();
